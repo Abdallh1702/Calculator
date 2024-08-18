@@ -87,7 +87,9 @@ function Calculator(){
                     result = parseFloat(result) % parseFloat(Second_Number_In_The_Operation )
                     break
                 default :
-                    console.log(result)
+                    document.getElementById("result").value = "Error"
+                    document.getElementById("result").style.backgroundColor = 'red'
+                    
             }
         }
 
